@@ -11,6 +11,6 @@ This is a very simple way to get a solution for the practice round of Google's 2
 | :---- | ---: | -----: |
 | *`A-Example`* | 17 | 16 |
 | *`B-Small`* | 100 | 99 |
-| *`C-Medium`* | 4500 | 4,495 |
-| *`D-Quite-Big`* | 1000000000 | 999,999,725 |
-| *`E-Also-Big`* | 505000000 | 504,999,983 |
+| *`C-Medium`* | 4,500 | 4,495 |
+| *`D-Quite-Big`* | 1,000,000,000 | 999,999,725 |
+| *`E-Also-Big`* | 505,000,000 | 504,999,983 |

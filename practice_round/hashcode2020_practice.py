@@ -34,8 +34,8 @@ def solution_1(pizzas, pieces_left):
     
     return selected
 
-def solution_2(pizzas, pieces_left):
-    return sum(pizzas)
+# def solution_2(pizzas, pieces_left):
+#     return sum(pizzas)
 
 
 if __name__ == '__main__':
