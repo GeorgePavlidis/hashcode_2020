@@ -25,5 +25,3 @@ with open(file_name, 'r') as fin:
         books = [int(x) for x in line.split()]
         library_books[i] = books
 
-        i = i + 1
-
