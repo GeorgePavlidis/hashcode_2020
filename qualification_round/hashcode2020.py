@@ -4,15 +4,19 @@ import sys
 file_name = sys.argv[1]
 
 with open(file_name, 'r') as fin:
+    
     B, L, D = fin.readline().split()
     B = int(B)
     L = int(L)
     D = int(D)
 
-
+    print('Start')
     scores = np.array([int(x) for x in fin.readline().split()])
 
+    
     sorted_scores_index = np.argsort(scores*(-1))
+    print('End')
+
 
     # [number of books, signup finish, no. can be shipped]
     library_data = {}
@@ -54,9 +58,19 @@ for i in sorted_scores_index:
                 output[library][0] = output[library][0] - 1
             
                 break
-print(len(output))
 
-for library, value in output.items():
+with open(sys.argv[2], 'w') as fout:
 
-    print(library, len(value[1]))
-    print(*value[1])
+    fout.write(str(len(output))+'\n')
+
+    for library, value in output.items():
+
+        fout.write(str(library)+' ')
+        fout.write(str(len(value[1])))
+        fout.write('\n')
+        
+        for v in value[1]:
+            fout.write(str(v)+' ')
+
+        fout.write('\n')
+        
