@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+time python ./hashcode2020v2.py a_example.txt a_example.out
+echo a
+time python ./hashcode2020v2.py b_read_on.txt b_read_on.out
+echo b
+time python ./hashcode2020v2.py c_incunabula.txt c_incunabula.out
+echo c
+time python ./hashcode2020v2.py d_tough_choices.txt d_tough_choices.out
+echo d
+time python ./hashcode2020v2.py e_so_many_books.txt e_so_many_books.out
+echo e
+time python ./hashcode2020v2.py f_libraries_of_the_world.txt f_libraries_of_the_world.out
+echo f

@@ -44,7 +44,7 @@ total_scanned = []
 output = {}
 
 for library in sorted_libraries:
-    print('Current day ',current_day, ' Library ', library)
+    # print('Current day ',current_day, ' Library ', library)
     if current_day >= D:
         break
     signup_time = library_data[library][1]
